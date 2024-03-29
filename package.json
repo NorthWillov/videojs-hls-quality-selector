@@ -1,10 +1,10 @@
 {
   "name": "videojs-quality-hls-selector",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "This is copy of existing package videojs-hls-quality-selector by Chris Boustead with 1 feature added to specify default quality to options. Adds a quality selector menu for HLS sources played in videojs.",
   "main": "cjs/plugin.js",
   "module": "es/plugin.js",
-  "browser": "dist/videojs-hls-quality-selector.js",
+  "browser": "dist/videojs-quality-hls-selector.js",
   "generator-videojs-plugin": {
     "version": "9.0.0"
   },
@@ -33,7 +33,8 @@
     "watch:cjs": "npm run build:cjs -- -w",
     "watch:css": "npm run build:css -- -w",
     "watch:es": "npm run build:es -- -w",
-    "watch:js": "npm run build:js -- -w"
+    "watch:js": "npm run build:js -- -w",
+    "prepublishOnly": "npm-run-all build-prod && vjsverify --verbose --skip-es-check"
   },
   "engines": {
     "node": ">=14",
