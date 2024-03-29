@@ -75,7 +75,7 @@ class HlsQualitySelector extends Plugin {
       concreteButtonInstance
         .menuButton_.$('.vjs-icon-placeholder').className += icon;
     } else {
-      this.setButtonInnerText(player.localize('Auto'));
+      this.setButtonInnerText(player.localize('auto'));
     }
     concreteButtonInstance.removeClass('vjs-hidden');
 
@@ -146,7 +146,7 @@ class HlsQualitySelector extends Plugin {
     }).reverse();
 
     levelItems.push(this.getQualityMenuItem.call(this, {
-      label: this.player.localize('Auto'),
+      label: this.player.localize('auto'),
       value: 'auto',
       selected: false
     }));
@@ -172,7 +172,7 @@ class HlsQualitySelector extends Plugin {
     this._currentQuality = quality;
 
     if (this.options.displayCurrentQuality) {
-      this.setButtonInnerText(quality === 'auto' ? this.player.localize('Auto') : `${quality}p`);
+      this.setButtonInnerText(quality === 'auto' ? this.player.localize('auto') : `${quality}p`);
     }
 
     for (let i = 0; i < qualityList.length; ++i) {
