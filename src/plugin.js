@@ -143,12 +143,12 @@ class HlsQualitySelector extends Plugin {
         return 1;
       }
       return 0;
-    });
+    }).reverse();
 
     levelItems.push(this.getQualityMenuItem.call(this, {
       label: this.player.localize('Auto'),
       value: 'auto',
-      selected: true
+      selected: false
     }));
 
     if (this._qualityButton) {

@@ -25,6 +25,19 @@ export default class ConcreteMenuItem extends VideoJsMenuItemClass {
     this.item = item;
     this.qualityButton = qualityButton;
     this.plugin = plugin;
+    this.setDefaultQuality();
+  }
+
+  setDefaultQuality() {
+    // Reset other menu items selected status.
+    for (let i = 0; i < this.qualityButton.items.length; ++i) {
+      this.qualityButton.items[i].selected(false);
+    }
+
+    if (this.item.value === this.plugin.options.defaultQuality) {
+      this.plugin.setQuality(this.plugin.options.defaultQuality);
+      this.selected(true);
+    }
   }
 
   /**
