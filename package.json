@@ -33,8 +33,7 @@
     "watch:cjs": "npm run build:cjs -- -w",
     "watch:css": "npm run build:css -- -w",
     "watch:es": "npm run build:es -- -w",
-    "watch:js": "npm run build:js -- -w",
-    "prepublishOnly": "npm-run-all build-prod && vjsverify --verbose --skip-es-check"
+    "watch:js": "npm run build:js -- -w"
   },
   "engines": {
     "node": ">=14",
