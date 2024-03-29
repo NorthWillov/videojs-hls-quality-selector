@@ -36,6 +36,10 @@ Set this to override the default positioning of the menu button in the control b
 
 Set this to one of the custom VJS icons ([https://videojs.github.io/font/](https://videojs.github.io/font/)) to override the icon for the menu button.
 
+**defaultQuality** `number`
+
+Set default quality
+
 ## Methods
 
 **getCurrentQuality** `string` - \_'auto'\_\_
