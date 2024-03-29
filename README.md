@@ -5,7 +5,7 @@
 
 ## Important!
 
-This is a complete FORK by [https://github.com/chrisboustead]https://github.com/chrisboustead from [https://github.com/chrisboustead/videojs-hls-quality-selector]https://github.com/chrisboustead/videojs-hls-quality-selector with 1 feature added to specify default quality to options.
+This is a complete FORK by https://github.com/chrisboustead from https://github.com/chrisboustead/videojs-hls-quality-selector with 1 feature added to specify default quality to options.
 
 **Note:**
 
