@@ -1,7 +1,7 @@
 {
-  "name": "videojs-hls-quality-selector",
-  "version": "2.0.0",
-  "description": "Adds a quality selector menu for HLS sources played in videojs.",
+  "name": "videojs-quality-hls-selector",
+  "version": "1.0.0",
+  "description": "This is copy of existing package videojs-hls-quality-selector by Chris Boustead with 1 feature added to specify default quality to options. Adds a quality selector menu for HLS sources played in videojs.",
   "main": "cjs/plugin.js",
   "module": "es/plugin.js",
   "browser": "dist/videojs-hls-quality-selector.js",
@@ -44,7 +44,7 @@
     "videojs",
     "videojs-plugin"
   ],
-  "author": "Chris Boustead (chris@forgemotion.com)",
+  "author": "Artem Verbytskyi",
   "license": "MIT",
   "vjsstandard": {
     "ignore": [
